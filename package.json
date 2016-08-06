@@ -1,9 +1,9 @@
 {
-  "name": "vue-admin",
+  "name": "EagleEyeUI",
   "version": "0.0.1",
   "description": "Vue Admin Panel Framework",
-  "author": "fundon <cfddream@gmail.com>",
-  "repository": "fundon/vue-admin",
+  "author": "MeiQuant",
+  "repository": "MeiQuant/EagleEye-UI",
   "keywords": [
     "admin",
     "dashboard",

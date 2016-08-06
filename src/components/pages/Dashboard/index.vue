@@ -3,14 +3,16 @@
     <div class="tile is-ancestor">
       <div class="tile is-parent">
         <article class="tile is-child box">
-          <p class="title">One</p>
-          <p class="subtitle">Subtitle</p>
+          <p class="title">
+            {{ platform }}
+          </p>
+          <p class="subtitle">监测平台数</p>
         </article>
       </div>
       <div class="tile is-parent">
         <article class="tile is-child box">
-          <p class="title">Two</p>
-          <p class="subtitle">Subtitle</p>
+          <p class="title">{{ test }}</p>
+          <p class="subtitle">监测产品数</p>
         </article>
       </div>
       <div class="tile is-parent">
@@ -152,15 +154,11 @@ export default {
   },
 
   created () {
-    setInterval(() => {
-      // https://vuejs.org/guide/list.html#Mutation-Methods
-      // this.data.unshift(this.data.pop())
-      this.data.forEach((item, i) => {
-        this.data.$set(i, Math.ceil(Math.random() * 1000))
-      })
-    }, 1024)
+
   }
+
 }
+
 </script>
 
 <style lang="scss" scoped>
