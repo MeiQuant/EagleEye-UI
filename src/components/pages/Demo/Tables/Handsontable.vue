@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import Handsontable from '../../ui/table/Handsontable'
+import Handsontable from '../../../ui/table/Handsontable'
 
 export default {
   components: {

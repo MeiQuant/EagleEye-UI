@@ -58,110 +58,122 @@ router.map({
     name: 'Dashboard',
     component: Dashboard
   },
+
+  '/internet/platforms': {
+    name: 'Platforms',
+    component: lazyLoading('./components/pages/Internet/Platforms')
+  },
+  'internet/products': {
+    name: 'Products',
+    component: lazyLoading('./components/pages/Internet/Products')
+  },
+
+  // 下面是demo页面，可删除
+
   // http://router.vuejs.org/en/lazy.html
   '/charts/chartJs': {
     name: 'ChartJs',
-    component: lazyLoading('./components/pages/Charts/ChartJs')
+    component: lazyLoading('./components/pages/Demo/Charts/ChartJs')
   },
   '/charts/chartist': {
     name: 'Chartist',
-    component: lazyLoading('./components/pages/Charts/Chartist')
+    component: lazyLoading('./components/pages/Demo/Charts/Chartist')
   },
   '/charts/peity': {
     name: 'Peity',
-    component: lazyLoading('./components/pages/Charts/Peity')
+    component: lazyLoading('./components/pages/Demo/Charts/Peity')
   },
   '/charts/plotly': {
     name: 'Plotly',
-    component: lazyLoading('./components/pages/Charts/Plotly')
+    component: lazyLoading('./components/pages/Demo/Charts/Plotly')
   },
   '/ui': {
     name: 'UI',
-    component: lazyLoading('./components/pages/UI/index'),
+    component: lazyLoading('./components/pages/Demo/UI/index'),
     subRoutes: {
       '/typography': {
         name: 'Typography',
-        component: lazyLoading('./components/pages/UI/Typography')
+        component: lazyLoading('./components/pages/Demo/UI/Typography')
       },
       '/buttons': {
         name: 'Buttons',
-        component: lazyLoading('./components/pages/UI/Buttons')
+        component: lazyLoading('./components/pages/Demo/UI/Buttons')
       },
       '/icons': {
         name: 'Icons',
-        component: lazyLoading('./components/pages/UI/Icons')
+        component: lazyLoading('./components/pages/Demo/UI/Icons')
       },
       '/form': {
         name: 'Form',
-        component: lazyLoading('./components/pages/UI/Form')
+        component: lazyLoading('./components/pages/Demo/UI/Form')
       }
     }
   },
   '/components': {
     name: 'Components',
-    component: lazyLoading('./components/pages/Components/index'),
+    component: lazyLoading('./components/pages/Demo/Components/index'),
     subRoutes: {
       '/backtotop': {
         name: 'BackToTop',
-        component: lazyLoading('./components/pages/Components/BackToTop')
+        component: lazyLoading('./components/pages/Demo/Components/BackToTop')
       },
       '/collapse': {
         name: 'Collapse',
-        component: lazyLoading('./components/pages/Components/Collapse')
+        component: lazyLoading('./components/pages/Demo/Components/Collapse')
       },
       '/datepicker': {
         name: 'Datepicker',
-        component: lazyLoading('./components/pages/Components/Datepicker')
+        component: lazyLoading('./components/pages/Demo/Components/Datepicker')
       },
       '/emoji': {
         name: 'Emoji',
-        component: lazyLoading('./components/pages/Components/Emoji')
+        component: lazyLoading('./components/pages/Demo/Components/Emoji')
       },
       '/message': {
         name: 'Message',
-        component: lazyLoading('./components/pages/Components/Message')
+        component: lazyLoading('./components/pages/Demo/Components/Message')
       },
       '/modal': {
         name: 'Modal',
-        component: lazyLoading('./components/pages/Components/Modal')
+        component: lazyLoading('./components/pages/Demo/Components/Modal')
       },
       '/notification': {
         name: 'Notification',
-        component: lazyLoading('./components/pages/Components/Notification')
+        component: lazyLoading('./components/pages/Demo/Components/Notification')
       },
       '/progress': {
         name: 'Progress',
-        component: lazyLoading('./components/pages/Components/Progress')
+        component: lazyLoading('./components/pages/Demo/Components/Progress')
       },
       '/rating': {
         name: 'Rating',
-        component: lazyLoading('./components/pages/Components/Rating')
+        component: lazyLoading('./components/pages/Demo/Components/Rating')
       },
       '/slider': {
         name: 'Slider',
-        component: lazyLoading('./components/pages/Components/Slider')
+        component: lazyLoading('./components/pages/Demo/Components/Slider')
       },
       '/switch': {
         name: 'Switch',
-        component: lazyLoading('./components/pages/Components/Switch')
+        component: lazyLoading('./components/pages/Demo/Components/Switch')
       },
       '/tabs': {
         name: 'Tabs',
-        component: lazyLoading('./components/pages/Components/Tabs')
+        component: lazyLoading('./components/pages/Demo/Components/Tabs')
       },
       '/tooltip': {
         name: 'Tooltip',
-        component: lazyLoading('./components/pages/Components/Tooltip')
+        component: lazyLoading('./components/pages/Demo/Components/Tooltip')
       }
     }
   },
   '/tables/basic': {
     name: 'BasicTables',
-    component: lazyLoading('./components/pages/Tables/Basic')
+    component: lazyLoading('./components/pages/Demo/Tables/Basic')
   },
   '/tables/handsontable': {
     name: 'Handsontable',
-    component: lazyLoading('./components/pages/Tables/Handsontable')
+    component: lazyLoading('./components/pages/Demo/Tables/Handsontable')
   }
 })
 

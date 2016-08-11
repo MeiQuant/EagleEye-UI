@@ -2,7 +2,7 @@
   <footer class="footer">
     <div class="container">
       <div class="content has-text-centered">
-      <p>美灿科技</p>
+      <p>美灿科技 2016</p>
       </div>
     </div>
   </footer>
@@ -12,13 +12,4 @@
 </script>
 
 <style lang="scss">
-.footer {
-  .social a {
-    border-bottom: none !important;
-  }
-
-  .fa.fa-heart {
-    color: red;
-  }
-}
 </style>

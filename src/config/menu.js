@@ -5,122 +5,94 @@ export default [
     icon: 'fa-tachometer'
   },
   {
-    label: 'Charts',
+    label: '互联网理财',
     icon: 'fa-bar-chart-o',
     expanded: true,
     subMenu: [
       {
-        link: 'ChartJs',
-        label: 'ChartJs'
+        link: 'Platforms',
+        label: '平台列表'
       },
       {
-        link: 'Chartist',
-        label: 'Chartist'
-      },
-      {
-        link: 'Peity',
-        label: 'Peity'
-      },
-      {
-        link: 'Plotly',
-        label: 'Plotly'
+        link: 'Products',
+        label: '产品列表'
       }
     ]
   },
   {
-    label: 'UI Features',
-    icon: 'fa-laptop',
+    label: '银行理财',
+    icon: 'fa-bank',
     expanded: false,
     subMenu: [
       {
         link: 'Buttons',
         label: 'Buttons'
-      },
-      {
-        link: 'Form',
-        label: 'Form'
-      },
-      {
-        link: 'Typography',
-        label: 'Typography'
-      },
-      {
-        link: 'Icons',
-        label: 'Icons'
       }
     ]
   },
   {
-    label: 'Components',
+    label: '信用卡',
+    icon: 'fa-credit-card',
+    expanded: false,
+    subMenu: [
+      {
+        link: 'BackToTop',
+        label: 'BackToTop'
+      }
+    ]
+  },
+  {
+    label: '贷款数据',
     icon: 'fa-building-o',
     expanded: false,
     subMenu: [
       {
         link: 'BackToTop',
         label: 'BackToTop'
-      },
-      {
-        link: 'Collapse',
-        label: 'Collapse'
-      },
-      {
-        link: 'Datepicker',
-        label: 'Datepicker'
-      },
-      {
-        link: 'Emoji',
-        label: 'Emoji'
-      },
-      {
-        link: 'Message',
-        label: 'Message'
-      },
-      {
-        link: 'Modal',
-        label: 'Modal'
-      },
-      {
-        link: 'Notification',
-        label: 'Notification'
-      },
-      {
-        link: 'Progress',
-        label: 'Progress'
-      },
-      {
-        link: 'Rating',
-        label: 'Rating'
-      },
-      {
-        link: 'Slider',
-        label: 'Slider'
-      },
-      {
-        link: 'Switch',
-        label: 'Switch'
-      },
-      {
-        link: 'Tabs',
-        label: 'Tabs'
-      },
-      {
-        link: 'Tooltip',
-        label: 'Tooltip'
       }
     ]
   },
   {
-    label: 'Tables',
-    icon: 'fa-table',
+    label: '基金数据',
+    icon: 'fa-pie-chart',
     expanded: false,
     subMenu: [
       {
         link: 'BasicTables',
         label: 'Basic Tables'
-      },
+      }
+    ]
+  },
+  {
+    label: '股票数据',
+    icon: 'fa-line-chart',
+    expanded: false,
+    subMenu: [
       {
-        link: 'Handsontable',
-        label: 'Handsontable'
+        link: 'BasicTables',
+        label: 'Basic Tables'
+      }
+    ]
+  },
+  {
+    label: '商品数据',
+    icon: 'fa-area-chart',
+    expanded: false,
+    subMenu: [
+      {
+        link: 'BasicTables',
+        label: 'Basic Tables'
+      }
+    ]
+  },
+  {
+    label: '期权数据',
+    icon: 'fa-superscript',
+    expanded: false,
+    subMenu: [
+      {
+        link: 'BasicTables',
+        label: 'Basic Tables'
       }
     ]
   }
