@@ -59,17 +59,41 @@ router.map({
     component: Dashboard
   },
 
-  '/internet/platforms': {
-    name: 'Platforms',
-    component: lazyLoading('./components/pages/Internet/Platform/List')
+  '/internet': {
+    name: 'Internet',
+    component: lazyLoading('./components/pages/Internet/Index'),
+    subRoutes: {
+      '/platform': {
+        name: 'Platform',
+        component: lazyLoading('./components/pages/Internet/Platform/Index'),
+        subRoutes: {
+          '/list': {
+            name: 'Platforms',
+            component: lazyLoading('./components/pages/Internet/Platform/List')
+          },
+          '/detail/:id': {
+            name: 'PlatformDetail',
+            component: lazyLoading('./components/pages/Internet/Platform/Detail')
+          }
+        }
+      },
+      '/product': {
+        name: 'Product',
+        component: lazyLoading('./components/pages/Internet/Product/Index'),
+        subRoutes: {
+          '/list': {
+            name: 'Products',
+            component: lazyLoading('./components/pages/Internet/Product/List')
+          },
+          '/detail/:id': {
+            name: 'ProductDetail',
+            component: lazyLoading('./components/pages/Internet/Product/Detail')
+          }
+        }
+      }
+    }
   },
-  'internet/products': {
-    name: 'Products',
-    component: lazyLoading('./components/pages/Internet/Product/List')
-  },
-
   // 下面是demo页面，可删除
-
   // http://router.vuejs.org/en/lazy.html
   '/charts/chartJs': {
     name: 'ChartJs',
