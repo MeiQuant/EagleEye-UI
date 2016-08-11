@@ -61,11 +61,11 @@ router.map({
 
   '/internet/platforms': {
     name: 'Platforms',
-    component: lazyLoading('./components/pages/Internet/Platforms')
+    component: lazyLoading('./components/pages/Internet/Platform/List')
   },
   'internet/products': {
     name: 'Products',
-    component: lazyLoading('./components/pages/Internet/Products')
+    component: lazyLoading('./components/pages/Internet/Product/List')
   },
 
   // 下面是demo页面，可删除
