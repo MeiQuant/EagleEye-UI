@@ -45,7 +45,10 @@ export default {
     },
 
     list () {
-      return this.defaultList.concat(this.find(this.name, this.menu))
+      var menu = this.menu
+      var pages = []
+      var pageList = menu.concat(pages)
+      return this.defaultList.concat(this.find(this.name, pageList))
     }
   },
 
@@ -65,7 +68,7 @@ export default {
         if (item.subMenu) {
           if (item.link) {
             temp.push({
-              lable: item.label,
+              label: item.label,
               link: item.link
             })
           }

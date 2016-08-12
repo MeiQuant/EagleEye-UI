@@ -160,9 +160,6 @@ export default {
       return total
     }
 
-  },
-
-  created () {
   }
 
 }
