@@ -16,6 +16,10 @@ export default [
       {
         link: 'Products',
         label: '产品列表'
+      },
+      {
+        link: 'Assets',
+        label: '资产列表'
       }
     ]
   },

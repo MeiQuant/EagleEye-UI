@@ -90,6 +90,20 @@ router.map({
             component: lazyLoading('./components/pages/Internet/Product/Detail')
           }
         }
+      },
+      '/asset': {
+        name: 'Asset',
+        component: lazyLoading('./components/pages/Internet/Asset/Index'),
+        subRoutes: {
+          '/list': {
+            name: 'Assets',
+            component: lazyLoading('./components/pages/Internet/Asset/List')
+          },
+          '/detail/:id': {
+            name: 'AssetDetail',
+            component: lazyLoading('./components/pages/Internet/Asset/Detail')
+          }
+        }
       }
     }
   },
