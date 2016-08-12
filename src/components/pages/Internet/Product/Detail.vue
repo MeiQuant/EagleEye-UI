@@ -33,7 +33,7 @@
       <article class="box">
         <h4 class="title">资产组合</h4>
         <div class="content">
-          <chart :type="'pie'" :data="assetsData"></chart>
+          <chart :type="'pie'" :data="assetsData" :options="assetsOptions"></chart>
         </div>
       </article>
     </div>
@@ -48,11 +48,11 @@
             <thead>
             <tr>
               <th>序号</th>
-              <th>产品名称</th>
-              <th>所属平台</th>
-              <th>平均收益</th>
-              <th>总交易额</th>
-              <th>总用户数</th>
+              <th>资产名称</th>
+              <th>预期收益</th>
+              <th>合作机构</th>
+              <th>总投资额</th>
+              <th>还款期限</th>
               <th>操作</th>
             </tr>
             </thead>
@@ -135,6 +135,12 @@
               '#FFCE56'
             ]
           }]
+        }
+      },
+
+      assetsOptions () {
+        return {
+          tooltips: false
         }
       },
 
