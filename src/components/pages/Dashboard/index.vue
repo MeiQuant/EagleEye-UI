@@ -90,6 +90,7 @@
 <script>
 import Chart from 'vue-bulma-chartjs'
 import store from '../../../vuex/store'
+import { initPlatforms } from '../../../vuex/actions'
 
 export default {
   components: {
@@ -159,7 +160,10 @@ export default {
       }
       return total
     }
+  },
 
+  created: function () {
+    initPlatforms(store)
   }
 
 }

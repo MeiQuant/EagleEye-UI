@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 
 import config from '../config'
+import mutations from './mutations'
 
 const { menu, sidebar } = config
 
@@ -9,6 +10,7 @@ Vue.use(Vuex)
 
 const store = new Vuex.Store({
 
+  mutations: mutations,
   state: {
     menu,
     sidebar,
@@ -38,10 +40,6 @@ const store = new Vuex.Store({
     users: {
       count: 1000
     }
-  },
-
-  mutations: {
-
   }
 })
 
